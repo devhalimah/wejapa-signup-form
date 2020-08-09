@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap");
+body {
+  background: white;
+}
+
+form {
+  background: white;
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+  font-family: "Josefin Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+form input[type=text], form [type=password] {
+  padding: 13px;
+  margin: 10px auto;
+  outline: none;
+  width: 70%;
+  border: 0px solid white;
+  border-bottom: 1px solid gray;
+  color: black;
+  font-weight: 400;
+  text-align: center;
+}
+form input[type=text]:focus, form [type=password]:focus {
+  border-bottom: 1px solid black;
+  width: 78%;
+}
+form input[type=color], form [type=date] {
+  padding: 13px;
+  margin: 10px 10%;
+  border: none;
+  cursor: pointer;
+}
+form input[type=submit] {
+  padding: 18px;
+  background: #333333;
+  color: white;
+  outline-color: gray;
+  font-weight: 600;
+  font-size: 20px;
+  border-radius: 10px;
+  width: auto;
+  margin: 20px auto;
+  cursor: pointer;
+}
+
+p {
+  font-size: 18px;
+  color: #333333;
+}
+
+.gender, .department {
+  padding: 13px;
+  margin: 18px;
+}
+
+select {
+  width: 10%;
+}
+
+@keyframes header {
+  from {
+    color: #333333;
+  }
+  to {
+    color: gray;
+  }
+}
+h1 {
+  text-transform: uppercase;
+  font-size: 30px;
+  color: gray;
+  text-shadow: -1px -1px 0px #1a1a1a;
+  font-weight: 600;
+  transition: color 0.1s linear 1s;
+  animation: header 0.4s linear 1s infinite alternate;
+}
+
+h1:active {
+  color: #333333;
+}
+
+hr {
+  width: 73.8%;
+  color: gray;
+  height: 1px;
+  outline: none;
+  border: 0px solid white;
+  border-bottom: 1px solid gray;
+}
+
+section, .error {
+  color: Red;
+  font-size: 15px;
+  line-height: 2;
+  margin: 0 auto;
+}
+section h4, .error h4 {
+  font-size: 18px;
+  line-height: 0.6;
+}
+
+/*# sourceMappingURL=index.css.map */
